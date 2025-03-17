@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>干中学 - 每日计划与专注时钟，助您高效边干边学</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(to right, #3B82F6, #6366F1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .app-screenshot {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-radius: 2.5rem;
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <i class="fa-solid fa-lightbulb text-white text-xl"></i>
+                    </div>
+                    <span class="ml-3 text-xl font-bold text-gray-800">干中学</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#features" class="text-gray-600 hover:text-blue-500 transition">功能</a>
+                    <a href="#screenshots" class="text-gray-600 hover:text-blue-500 transition">截图</a>
+                    <a href="#download" class="text-gray-600 hover:text-blue-500 transition">下载</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 transition">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        在实践中学习，<br>在<span class="gradient-text">学习</span>中成长
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        每日计划与专注时钟，助您高效边干边学
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#download" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                            立即下载
+                        </a>
+                        <a href="#features" class="px-8 py-3 bg-white text-blue-500 font-semibold rounded-xl shadow-sm hover:shadow transition duration-300 border border-blue-100">
+                            了解更多
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="干中学应用" 
+                         class="w-80 h-auto rounded-3xl shadow-2xl border-8 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能介绍 -->
+    <section id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">为什么选择干中学？</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    我们提供简单高效的工具，帮助您在学习和工作中取得更好的成果
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 功能卡片 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300 feature-card">
+                    <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-list-check text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">任务管理</h3>
+                    <p class="text-gray-600">
+                        轻松创建和管理您的日常任务，设置优先级和截止日期，确保重要事项不被遗忘。
+                    </p>
+                </div>
+                
+                <!-- 功能卡片 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300 feature-card">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-clock text-indigo-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">专注时钟</h3>
+                    <p class="text-gray-600">
+                        基于科学的时间管理方法，帮助您保持专注，提高工作和学习效率。
+                    </p>
+                </div>
+                
+                <!-- 功能卡片 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300 feature-card">
+                    <div class="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-chart-line text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">数据统计</h3>
+                    <p class="text-gray-600">
+                        直观的数据可视化，帮助您了解自己的工作和学习模式，持续改进提高效率。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用截图 -->
+    <section id="screenshots" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">应用界面</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    简洁现代的设计，让您的工作和学习更加愉悦
+                </p>
+            </div>
+            
+            <div class="flex overflow-x-auto space-x-6 pb-8 px-4">
+                <!-- 截图 1：专注时钟界面 -->
+                <div class="flex-shrink-0 w-64 app-screenshot">
+                    <img src="images/focus_timer.png" 
+                         alt="专注时钟界面" 
+                         class="w-full h-auto">
+                </div>
+                
+                <!-- 截图 2：任务管理界面 -->
+                <div class="flex-shrink-0 w-64 app-screenshot">
+                    <img src="images/task_management.png" 
+                         alt="任务管理界面" 
+                         class="w-full h-auto">
+                </div>
+                
+                <!-- 截图 3：应用启动页面 -->
+                <div class="flex-shrink-0 w-64 app-screenshot">
+                    <img src="images/welcome_screen.png" 
+                         alt="应用启动页面" 
+                         class="w-full h-auto">
+                </div>
+                
+                <!-- 截图 4：专注时钟设置界面 -->
+                <div class="flex-shrink-0 w-64 app-screenshot">
+                    <img src="images/focus_timer_light.png" 
+                         alt="专注时钟设置界面" 
+                         class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section id="download" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl p-12 text-center text-white">
+                <h2 class="text-3xl font-bold mb-6">立即开始使用干中学</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    提升您的工作和学习效率，让每一天都充满成就感
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="px-8 py-3 bg-white text-blue-600 font-semibold rounded-xl shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fa-brands fa-apple text-2xl mr-2"></i>
+                        App Store
+                    </a>
+                    <a href="#" class="px-8 py-3 bg-white text-blue-600 font-semibold rounded-xl shadow-md hover:shadow-lg transition duration-300 flex items-center">
+                        <i class="fa-brands fa-google-play text-2xl mr-2"></i>
+                        Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">联系我们</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    有任何问题或建议？我们很乐意听取您的意见
+                </p>
+            </div>
+            
+            <div class="max-w-lg mx-auto bg-white rounded-2xl shadow-sm p-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                        <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">发送邮件</h3>
+                    <p class="text-gray-600 mb-4">
+                        我们会尽快回复您的邮件
+                    </p>
+                    <a href="mailto:cang.chen@foxmail.com" class="text-blue-500 font-semibold hover:underline">
+                        cang.chen@foxmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center">
+                        <i class="fa-solid fa-lightbulb text-blue-500 text-xl"></i>
+                    </div>
+                    <span class="ml-3 text-xl font-bold">干中学</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fa-brands fa-weixin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fa-brands fa-weibo text-2xl"></i>
+                    </a>
+                    <a href="mailto:cang.chen@foxmail.com" class="text-gray-300 hover:text-white transition">
+                        <i class="fa-solid fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 干中学. 保留所有权利.</p>
+                <p class="mt-2">设计与开发: <a href="mailto:cang.chen@foxmail.com" class="hover:text-blue-300">cang.chen@foxmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
